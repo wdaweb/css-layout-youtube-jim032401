@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: '微軟正黑體';
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: black;
+  margin-left: 20px;
+}
+
+i{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+p,a{
+  font-size: 0.9rem;
+}
+
+hr{
+  border: 1px solid lightgray;
+  margin: 12px 0;
+}
+
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  padding-right: 40px;
+}
+
+.logo-container i{
+  position: relative;
+  right: 1rem;
+}
+.logo-icon{
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+#logo-txt{
+  letter-spacing: -2px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.search-container{
+  display: flex;
+  align-items: center;
+  flex: 0 1 685px;
+  margin-left: 40px;
+}
+
+.search-container form{
+  position: relative;
+  width: 100%;
+}
+
+.search-container input{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 12px;
+  color: black;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+.search{
+  position: relative;
+  right: 30px;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: lightgray;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+.mic{
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.body-container{
+  display: flex;
+  position: fixed;
+  height: calc(100vh - 60px);
+  top: 60px;
+}
+.sidebar{
+  padding-top: 10px;
+  width: 250px;
+  overflow-y: scroll;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: black;
+}
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item{
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.sidebar-item:hover{
+  background-color: lightgray;
+}
+
+.sidebar-item i{
+  margin-right: 24px;
+}
+
+/* 橫條 */
+
+.content{
+  width: calc(100vw - 240px);
+}
+
+.chips-wrapper{
+  display: flex;
+}
+
+.chip{
+  margin: 10px 6px;
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+}
+
+.chip:hover{
+  background-color: black;
+}
+.chip p{
+  font-size: 24px;
+  color: white;
+}
+
+.video-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 18px;
+  padding: 20px 25px;
+  overflow-y: scroll;
+  height: calc(100vh - 100px);
+}
+/* YT播放影片 */
+.video-box{
+  position: relative;
+  width: auto;
+  height: 220px;
+  display: block;
+}
+.channel-logo{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.video-details{
+  display: flex;
+  padding-top: 14px;
+}
+
+.detail{
+  margin-left: 12px;
+}
+
+.title{
+  font-size: 1rem;
+}
+
+.channel-name{
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.views-upload{
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.upload{
+  margin-right: 6px;
+}
